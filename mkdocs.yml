@@ -2,9 +2,17 @@ site_name: My Docs
 site_url: https://example.com/
 nav:
     - Home: 'index.md'
-    - 'User Guide':
-        - 'Writing your docs': 'writing-your-docs.md'
-        - 'Styling your docs': 'styling-your-docs.md'
+    - Programming:
+        - 'HTML docs': 'html.md'
+        - 'CSS docs': 'css.md'
+        - 'Java Script docs': 'js.md'
+        - 'Python docs': 'python.md'
+        - 'Django docs': 'django.md'
+        - 'Other frameworks docs': 'other_frameworks.md'
     - About:
+        - 'About': 'about.md'
         - 'License': 'license.md'
         - 'Release Notes': 'release-notes.md'
+theme:
+    name: mkdocs
+    nav_style: dark
