@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link rel="canonical" href="https://example.com/python/">
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Python docs - My Docs</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
+
+        <script src="../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="..">My Docs</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href=".." class="nav-link">Home</a>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Programming <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../html.md" class="dropdown-item">HTML docs</a>
+</li>
+                                    
+<li>
+    <a href="../css.md" class="dropdown-item">CSS docs</a>
+</li>
+                                    
+<li>
+    <a href="../js.md" class="dropdown-item">Java Script docs</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active">Python docs</a>
+</li>
+                                    
+<li>
+    <a href="../django.md" class="dropdown-item">Django docs</a>
+</li>
+                                    
+<li>
+    <a href="../other_frameworks.md" class="dropdown-item">Other frameworks docs</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../about/" class="dropdown-item">About</a>
+</li>
+                                    
+<li>
+    <a href="../license.md" class="dropdown-item">License</a>
+</li>
+                                    
+<li>
+    <a href="../release-notes.md" class="dropdown-item">Release Notes</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href=".." class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../about/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#python-variables" class="nav-link">Python Variables</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#python-list" class="nav-link">Python List</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#python-dictionaries" class="nav-link">Python Dictionaries</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#python-read-a-file" class="nav-link">Python Read a File</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="python-variables">Python Variables</h1>
+<hr />
+<p>Example of assign variable</p>
+<pre><code>&gt;&gt;&gt; a = 1
+&gt;&gt;&gt; b = 2
+&gt;&gt;&gt; a = b
+&gt;&gt;&gt; a
+2
+&gt;&gt;&gt; b
+2
+&gt;&gt;&gt; b = 3
+&gt;&gt;&gt; a
+2
+&gt;&gt;&gt; b
+3
+&gt;&gt;&gt; b = a
+&gt;&gt;&gt; b
+2
+&gt;&gt;&gt; a
+2
+&gt;&gt;&gt;
+</code></pre>
+<p><strong>Scope</strong></p>
+<p>A variable defined outside of a function is available inside that function</p>
+<blockquote>
+<p>variable ne'ebe defini iha funsuan nia liu se bele assesu iha funsaun nia laran</p>
+</blockquote>
+<p>A variable defined inside of a function is NOT available outside of that function</p>
+<blockquote>
+<p>vabriable ne'ebe define iha funsaun nia lara la bele assesu iha funsaun nia liur</p>
+</blockquote>
+<p><strong>Mutable or Immutable</strong></p>
+<blockquote>
+<p>Mutable means it can be added to.
+Immutable means it cannot be added to</p>
+</blockquote>
+<p><strong>What types are Mutable?</strong></p>
+<ul>
+<li>lists</li>
+<li>dictonaries</li>
+</ul>
+<pre><code>people = {'ano': 1, 'ony': 2}
+
+In [18]: def add_person(my_dict):
+    ...:     my_dict.update({'mario':3})
+    ...:     return my_dict
+    ...:
+
+In [19]: people
+Out[19]: {'ano': 1, 'ony': 2}
+
+In [20]: add_person(people)
+Out[20]: {'ano': 1, 'mario': 3, 'ony': 2}
+
+In [21]: people
+Out[21]: {'ano': 1, 'mario': 3, 'ony': 2}
+</code></pre>
+<p><strong>What types are Immutable</strong></p>
+<ul>
+<li>tuples</li>
+<li>ints</li>
+<li>strings</li>
+</ul>
+<pre><code>In [12]: number = 5
+
+In [13]: def plus_one(value):
+    ...:     value = value + 1
+    ...:     return value
+    ...:
+
+In [14]: number
+Out[14]: 5
+
+In [15]: plus_one(number)
+Out[15]: 6
+
+In [16]: number
+Out[16]: 5
+</code></pre>
+<h1 id="python-list">Python List</h1>
+<hr />
+<p>This is how you write the python list in funciton and testing it</p>
+<pre><code>def hello_world():
+    ''' This function returns 'Hello World' '''
+    return 'Hello World'
+</code></pre>
+<p>Test the function</p>
+<pre><code>def test_hello_world():
+    assert hello_world() == 'Hello World'
+</code></pre>
+<p>Add to the List</p>
+<pre><code>def add_to_list(my_value, my_list):
+    '''
+    Given a value and a list this function
+    returns a list with the value added to it
+    '''
+    return my_list.append(my_value)
+</code></pre>
+<p>Test the function</p>
+<pre><code>def test_add_to_list():
+    my_value = 5
+    my_list = [1, 2, 3, 4]
+    assert add_to_list(my_value, my_list) == [1, 2, 3, 4, 5]
+</code></pre>
+<p>Get Item from a List</p>
+<pre><code>def get_index_from_list(my_index, my_list):
+    '''
+    Given an index (integer) and a list this function will
+    return the item at that index in the given list.
+    If index is not an integer return None
+    Remember Python indexes starts at 0
+    '''
+
+    if isinstance(my_index, int):
+        return my_list[my_index]
+</code></pre>
+<p>Test the function</p>
+<pre><code>def test_get_index_from_list():
+    my_list = ['1', 'Baucau', 'Aileu', 5, 'Cars']
+
+    assert get_index_from_list(2, my_list) == 'Aileu'
+    assert get_index_from_list('hello', my_list) == None
+</code></pre>
+<p>Check list for value</p>
+<pre><code>def is_in_list(my_value, my_list):
+    '''
+    Given a value and a list this function checks if the value can be found in the list
+    and returns True or False
+    '''
+    pass
+</code></pre>
+<p>Test the function</p>
+<pre><code>def test_is_in_list():
+    my_value = 3
+    not_my_value = 4
+    my_list = [1, 2, 3]
+
+    assert is_in_list(my_value, my_list) == True
+    assert is_in_list(not_my_value, my_list) == False
+</code></pre>
+<p>List Length</p>
+<pre><code>def get_length(my_list):
+    '''
+    Given a list this function
+    returns the number of items in the list
+    '''
+    pass
+</code></pre>
+<p>Test the function</p>
+<pre><code>def test_get_length():
+    my_list = [1, 2, 3]
+    assert get_length(my_list) == 3
+</code></pre>
+<p>Merge two lists</p>
+<pre><code>def merge_lists(first_list, second_list):
+    '''
+    Given two list this function returns a single list which contains the items of the
+    first list followed by the items of the second list
+    '''
+    pass
+</code></pre>
+<p>Test the function</p>
+<pre><code>def test_merge_lists():
+
+    first_list = [1, 2, 3]
+    second_list = [4, 5, 6]
+    assert merge_lists(first_list, second_list) == [1, 2, 3, 4, 5, 6]
+</code></pre>
+<p>Converting a list to string</p>
+<pre><code>def list_to_string(my_list):
+    '''
+    Given a list the is funciton returns a string which includes the items of the list
+    separated by single spaces
+    '''
+    pass
+</code></pre>
+<p>Test the function</p>
+<pre><code>def test_list_to_string():
+    my_list = ['one', 'two', 'three']
+    assert list_to_string(my_list) == &quot;one two three&quot;
+
+</code></pre>
+<p>Count items in list</p>
+<pre><code>def count_occurrences(my_list):
+    '''
+    This function will return a dictionary containing
+    the number of occurrences of a item in a given list.
+    '''
+    pass
+</code></pre>
+<p>Test the function</p>
+<pre><code>def test_count_occurrences():
+    my_list = ['a', 'a', 'a', 'b', 'b', 'b', 'c', 'c']
+    assert count_occurrences(my_list) == {'a': 3, 'b': 3, 'c': 2}
+</code></pre>
+<p>Strings and lists</p>
+<pre><code>def string_to_list(my_string):
+    '''
+    This function takes a string and returns that string as a list.
+    If a the given value is not a string. The function returns None.
+    '''
+    pass
+</code></pre>
+<p>Test the function</p>
+<pre><code>def test_string_to_list():
+    assert string_to_list('hello world') == [
+        'h', 'e', 'l', 'l', 'o', ' ', 'w', 'o', 'r', 'l', 'd']
+    assert string_to_list(5) == None
+    assert string_to_list({'hello': 'world'}) == None
+</code></pre>
+<h1 id="python-dictionaries">Python Dictionaries</h1>
+<hr />
+<h3 id="what-is-a-dictionary">What is a dictionary?</h3>
+<p>Stores key / value pairs</p>
+<h3 id="how-do-we-make-a-new-dictionary">How do we make a new dictionary?</h3>
+<p>Dictionaries use curly brackets <code>{}</code></p>
+<pre><code>&gt;&gt;&gt; ages = {'Nando': 26, 'Peter': 36, 'Ano': 25}
+</code></pre>
+<h3 id="how-do-you-add-a-key-value-to-a-dictionary">How do you add a key / value to a dictionary?</h3>
+<pre><code>&gt;&gt;&gt; ages['Niko'] = 25
+&gt;&gt;&gt; ages
+{'Ano': 25, 'Nando': 26, 'Niko': 25, 'Peter': 36}
+</code></pre>
+<h3 id="how-do-you-changes-a-value-for-a-given-key">How do you changes a value for a given key?</h3>
+<p>Keys are unique.</p>
+<pre><code>&gt;&gt;&gt; ages['Ano'] = 26
+&gt;&gt;&gt; ages
+{'Ano': 26, 'Nando': 26, 'Niko': 25, 'Peter': 36}
+</code></pre>
+<h3 id="how-do-we-get-a-value-for-a-key">How do we get a value for a key?</h3>
+<pre><code>&gt;&gt;&gt; ages.get('Peter')
+36
+</code></pre>
+<p>Can also have a default value</p>
+<pre><code>&gt;&gt;&gt; ages.get('Peter', 'Unknown')
+36
+&gt;&gt;&gt; ages.get('Anders', 'Unknown')
+'Unknown'
+</code></pre>
+<p>Access the key directly</p>
+<pre><code>&gt;&gt;&gt; ages['Peter']
+36
+</code></pre>
+<p>This might cause a KeyError</p>
+<pre><code>&gt;&gt;&gt; ages['Anders']
+KeyError
+</code></pre>
+<h3 id="how-do-you-remove-a-key">How do you remove a key?</h3>
+<p>Use <code>del</code> to remove a key / value pair from a dictionary</p>
+<pre><code>&gt;&gt;&gt; ages = {'Ano': 25, 'Nando': 26, 'Niko': 25, 'Peter': 36}
+&gt;&gt;&gt; del ages['Niko']
+&gt;&gt;&gt; ages
+{'Ano': 25, 'Nando': 26, 'Peter': 36}
+</code></pre>
+<h3 id="how-can-you-find-the-size-of-a-dictionary">How can you find the size of a dictionary?</h3>
+<p>Use <code>len()</code> to get the number of key / value pairs in a dictionary</p>
+<pre><code>&gt;&gt;&gt; len(ages)
+3
+</code></pre>
+<h3 id="how-do-you-check-if-a-value-is-in-a-dictionary">How do you check if a value is in a dictionary?</h3>
+<p>Use <code>in</code> to see if a given key is in a dictionary</p>
+<pre><code>&gt;&gt;&gt; 'Anders' in ages
+False
+&gt;&gt;&gt; 'Peter' in ages
+True
+</code></pre>
+<h3 id="how-do-we-get-a-list-of-keys">How do we get a list of keys?</h3>
+<p>Use the <code>.keys()</code> method</p>
+<pre><code>&gt;&gt;&gt; ages.keys()
+['Nando', 'Peter']
+</code></pre>
+<h3 id="how-do-we-get-a-list-of-values">How do we get a list of values?</h3>
+<p>Use the <code>.values()</code> method</p>
+<pre><code>&gt;&gt;&gt; ages.values()
+[26, 36, 25]
+</code></pre>
+<h3 id="more-example-about-python-dictionary-with-a-functions-and-test">More example about python dictionary with a functions and test</h3>
+<pre><code>def hello_world():
+    ''' This function returns 'Hello World' '''
+    return 'Hello World'
+
+
+def test_hello_world():
+    assert hello_world() == 'Hello World'
+
+
+def add(a, b):
+    ''' This function adds two values '''
+    return a + b
+
+# Dictionaries
+
+def test_add():
+    assert add(1, 1) == 2
+    assert add(1, 2) == 3
+    assert add(23, 24) == 47
+
+
+def multiply(a, b):
+    ''' This function multiplies two values '''
+
+def test_list_values_in_dict():
+    assert list_values_in_dict({'hello': 'world'}) == ['world', ]
+    assert list_values_in_dict({'world': 'hello'}) == ['hello', ]
+    assert list_values_in_dict({'a': '1', 'b': '2', 'c': '3'}) == ['1', '2', '3', ]
+
+
+def count_occurrences(my_list):
+    ''' This function will return a dictionary containing 
+    the number of occurrences of a item in a given list. '''
+    from collections import Counter
+    return Counter(my_list)
+
+
+def test_count_occurrences():
+    my_list = ['a', 'a', 'a', 'b', 'b', 'b', 'c', 'c']
+    assert count_occurrences(my_list) == {'a': 3, 'b': 3, 'c': 2}
+
+
+def string_to_list(my_string):
+    ''' This function takes a string and returns that string as a list.
+        If a the given value is not a string. The function returns None.'''
+
+
+def test_string_to_list():
+    assert string_to_list('hello world') == ['h', 'e', 'l', 'l', 'o', ' ', 'w', 'o', 'r', 'l', 'd']
+    assert string_to_list(5) == None
+    assert string_to_list({'hello': 'world'}) == None
+
+</code></pre>
+<h1 id="python-read-a-file">Python Read a File</h1>
+<hr />
+<p>Read a file in python</p>
+<pre><code>with open('WC_text.txt') as fp:
+    print(fp.readlines())
+</code></pre>
+<p>Read a file in python and count the lines inside</p>
+<pre><code>def count_line():
+    with open('WC_text.txt') as fp:
+        lines = fp.readlines()
+    count = 0
+    for line in lines:
+        count += 1
+    return count
+count_line()
+</code></pre>
+<p>Read a file in python and count the words inside</p>
+<pre><code>def count_words():
+    with open('WC_text.txt', 'r') as fp:
+        lines = fp.read()
+        word_list = lines.split()
+        number_of_words = len(word_list)
+    return number_of_words
+count_words()
+</code></pre>
+<p>Read a file in python and count the charaters inside</p>
+<pre><code>def count_character():
+    with open('WC_text.txt') as fp:
+        lines = fp.read()
+        word_list = lines.replace(&quot; &quot;, &quot;&quot;)
+        number_of_words = len(word_list)
+    return number_of_words
+count_character()
+</code></pre>
+<p>Combine the functions above in one function</p>
+<pre><code>def wc():
+    with open('WC_text.txt', 'r') as fp:
+
+        # Read a file
+        read_file = fp.readlines()
+    count_lines = 0
+    count_words = 0
+    count_character = 0
+    for line in read_file:
+
+        # Count line
+        count_lines += 1
+
+        # Count words
+        word_list = line.split()
+        count_words += len(word_list)
+
+        # Count character
+        word_character = line.replace(&quot; &quot;, &quot;&quot;)
+        count_character += len(word_character)
+    return f&quot;{count_lines} lines, {count_words} words, {count_character} charaters&quot;
+wc()
+</code></pre>
+<p>More example about count lines</p>
+<pre><code>def line_count():
+    import os
+    import os.path
+    while True:
+        file_location = input(&quot;Which file do you want ot open?&quot;)
+
+        if os.path.isfile(file_location) and os.access(file_location, os.R_OK):
+            print(&quot;Ok&quot;)
+            break
+        else:
+            print(&quot;This not a file&quot;)
+    print(file_location + &quot;is a valid file&quot;)
+    line_count = 0
+    emtpy_line_count = 0
+    long_count = 0
+    with open(file_location) as f:
+        for line in f:
+            line_count += 1
+            if line == '\n':
+                emtpy_line_count += 1
+            if len(line) &gt; 20:
+                long_count += 1
+
+    print(line_count, emtpy_line_count, long_count)
+line_count()
+</code></pre></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js" defer></script>
+        <script src="../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
